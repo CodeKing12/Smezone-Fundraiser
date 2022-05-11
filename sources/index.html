@@ -12,6 +12,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
+<style>
+    .placeit::-moz-placeholder {
+        line-height: 0 !important;
+    }
+</style>
 <body class="font-nunito font-normal text-base">
     <header>
         <nav class="px-28 py-5 flex justify-between items-center">
@@ -236,8 +241,8 @@
                         <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">Talking to Investors</option>
                     </select>
                     <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="What specific goals do you hope to achieve by joining?" type="text">
-                    <textarea class="w-full h-16 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="What special expertise or experiences do you think you can share with other Founders? e.g. Refer customers, strategic advice, mentorship e.t.c" type="text"></textarea>
-                    <textarea class="w-full h-16 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="If accepted into the program, how many jobs do you think you will create, post-course?" type="text"></textarea>
+                    <input class="w-full placeit h-12 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="What special expertise or experiences do you think you can share with other Founders? e.g. Refer customers, strategic advice, mentorship e.t.c" type="text"></textarea>
+                    <input class="w-full h-12 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="If accepted into the program, how many jobs do you think you will create, post-course?" type="text"></textarea>
                 </div>
 
                 <div class="tab flex flex-col gap-6">
