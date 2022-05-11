@@ -8,30 +8,128 @@
     <link href="css/styles.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
 </head>
 <body class="font-nunito font-normal text-base">
     <header>
-        <nav class="px-28 py-5 flex justify-between">
+        <nav class="px-28 py-5 flex justify-between items-center">
             <img src="images/sme-logo.png">
-            <div class="flex gap-8 items-center">
-                <button class="bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl">
+            <div class="gap-8 items-center xl:flex hidden">
+                <button class="bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white hover:bg-white hover:border-brand-green hover:text-brand-green transition-all hover:transition-all duration-300 !hover:duration-250">
                     <a href="#">Latest Webinar</a>
                 </button>
-                <p class="font-semibold text-sm">Home</p>
-                <p class="font-semibold text-sm">Courses</p>
-                <p class="font-semibold text-sm">Events</p>
-                <p class="font-semibold text-sm">Loans</p>
-                <p class="font-semibold text-sm">Community</p>
-                <button class="bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl">
+                <p class="font-semibold text-sm relative">
+                    <a class="before:absolute hover:before:bg-brand-green before:w-0 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="#">
+                        Home
+                    </a>
+                </p>
+                <p class="font-semibold text-sm relative">
+                    <a class="before:absolute hover:before:bg-brand-green before:w-0 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="#">
+                        Courses
+                    </a>
+                </p>
+                <p class="font-semibold text-sm relative">
+                    <a class="before:absolute hover:before:bg-brand-green before:w-0 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="#">
+                        Events
+                    </a>
+                </p>
+                <p class="font-semibold text-sm relative">
+                    <a class="before:absolute hover:before:bg-brand-green before:w-0 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="#">
+                        Loans
+                    </a>
+                </p>
+                <p class="font-semibold text-sm relative">
+                    <a class="before:absolute hover:before:bg-brand-green before:w-0 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="#">
+                        Community
+                    </a>
+                </p>
+                <button class="bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl border-2 border-white hover:bg-white hover:border-brand-green hover:text-brand-green transition-all hover:transition-all duration-300 !hover:duration-250">
                     <a href="#">Sign Up</a>
                 </button>
-                <p class="font-semibold text-sm">Login</p>
+                <p class="font-semibold text-sm relative">
+                    <a class="before:absolute hover:before:bg-brand-green before:w-0 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="#">
+                        Login
+                    </a>
+                </p>
+            </div>
+            <div class="menu-icon block xl:hidden hover:cursor-pointer" onclick="openMenu()">
+                <span class="material-symbols-outlined !text-4xl">
+                    menu
+                </span>
             </div>
         </nav>
-        <div class="bg-black flex gap-16 px-24 py-16 text-white items-center" style="background-image: url('images/sme-bg-group.png');background-position: top -100px right -60px;">
+        <div id="menu" class="bg-white font-montserrat text-black z-[999] w-0 h-full fixed left-0 top-0 overflow-hidden transition-all duration-500 flex flex-col items-center justify-center">
+            <a class="absolute top-3 right-8 hover:cursor-pointer" onclick="closeMenu()">
+                <span class="material-symbols-outlined !text-4xl">
+                    close
+                </span>
+            </a>
+            <ul class="my-auto mobile-nav-items opacity-100 disappear flex flex-col items-start gap-[30px]">
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-green before:w-8 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="index.html#">
+                        Home
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-green before:w-8 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="shop.html#">
+                        Courses
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-green before:w-8 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="pricing.html#">
+                        Events
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-green before:w-8 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="demo.html#">
+                            Loans
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-green before:w-8 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="demo.html#">
+                            Community
+                        <span class="material-symbols-outlined">
+                            chevron_right
+                        </span>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1 before:absolute hover:before:bg-brand-green before:w-8 before:bg-brand-green before:h-0.5 before:top-full before:translate-x-0 before:translate-y-0 before:transition-all before:ease-out before:duration-[350ms] before:-z-index-[1] hover:before:w-full before:mt-1" href="demo.html#">
+                            Login
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1" href="demo.html#">
+                        <button class="bg-brand-green border-2 border-white hover:bg-white hover:border-brand-green hover:text-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl transition-all hover:transition-all duration-300 !hover:duration-250">
+                            <a href="#">Sign Up</a>
+                        </button>
+                    </a>
+                </li>
+                <li class="font-semibold text-sm relative">
+                    <a class="flex flex-row gap-1" href="demo.html#">
+                        <button class="bg-brand-green text-white border-2 border-white hover:bg-white hover:border-brand-green hover:text-brand-green px-6 py-3 text-sm font-semibold rounded-xl transition-all hover:transition-all duration-300 !hover:duration-250">
+                            <a href="#">Latest Webinar</a>
+                        </button>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="bg-black flex flex-col md:flex-row gap-14 md:gap-16 px-5 md:px-10 lg:px-16 xl:px-24 py-16 text-white items-center" style="background-image: url('images/sme-bg-group.png');background-position: top -100px right -60px;">
             <h1 class="text-[40px] leading-[50px] font-montserrat font-semibold">Get <span class="font-bold text">access</span> to funds &<br>accelerate your Startup</h1>
-            <h1 class="text-7xl font-['Montez']">x</h1>
+            <h1 class="text-7xl font-['Montez'] leading-[0] md:leading-none">x</h1>
             <div>
                 <p class="text-lg mb-3">In partnership with</p>
                 <img src="images/get-funded-africa.png">
@@ -40,7 +138,7 @@
         <img class="max-h-64 object-cover" src="images/pexels-rodnae-productions-7414274 1.png">
     </header>
 
-    <section class="py-20 px-52" style="background: linear-gradient(182.93deg, #CEEE0A 2.44%, rgba(206, 238, 10, 0) 66.77%);">
+    <section class="py-20 px-8 sm:px-14 md:px-16 lg:px-28 xl:px-52" style="background: linear-gradient(182.93deg, #CEEE0A 2.44%, rgba(206, 238, 10, 0) 66.77%);">
         <div class="pb-12">
             <h3 class="font-bold text-lg pb-5">Aim of this partnership</h3>
             <p class="">This communication seeks to engage our DBALite customers as regards giving them access to investors by selling a paid investor readiness program to them which after taking the course, gives them access to pitch to investors after completion of the paid courses and submission of pitch proposal.</p>
@@ -51,7 +149,7 @@
         </div>
         <div>
             <p class="font-medium text-lg pb-8">The <span class="font-bold text-blue-900">GetFundedAfrica</span> bundle will include:</p>
-            <div class="flex justify-between">
+            <div class="flex flex-wrap sm:flex-nowrap justify-between">
                 <div class="flex flex-col items-center justify-center">
                     <img class="mt-auto" src="images/bundle-1.png">
                     <p class="font-semibold mt-auto">Courses</p>
@@ -94,7 +192,9 @@
                 <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Job Title" type="text">
                 <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Gender" type="text">
                 <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Location (Country, State, City)" type="text">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">
+                <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                    <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Age Range</option>
+                </select>
                 <textarea class="w-full h-40 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Short Personal Bio" type="text"></textarea>
                 <button class="w-fit min-w-[140px] mt-6 bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl self-end">
                     <a href="#">Next</a>
@@ -119,6 +219,7 @@
                 </div>
             </div>
         </div>
+        <script src="js/index.js"></script>
     </footer>
 </body>
 </html>
