@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DBALite X Getfunded Africa</title>
     <link href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/custom.css" type="text/css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montez&display=swap" rel="stylesheet">
@@ -149,7 +150,7 @@
         </div>
         <div>
             <p class="font-medium text-lg pb-8">The <span class="font-bold text-blue-900">GetFundedAfrica</span> bundle will include:</p>
-            <div class="flex flex-wrap sm:flex-nowrap justify-between">
+            <div class="flex flex-col gap-5 sm:gap-0 sm:flex-row justify-between">
                 <div class="flex flex-col items-center justify-center">
                     <img class="mt-auto" src="images/bundle-1.png">
                     <p class="font-semibold mt-auto">Courses</p>
@@ -170,7 +171,7 @@
         </div>
     </section>
 
-    <section class="px-52 pt-16 mb-52">
+    <section class="px-8 sm:px-14 md:px-16 lg:px-28 xl:px-52 pt-16 mb-52">
         <h1 class="pb-5 font-bold font-montserrat text-4xl">Interested in this course?</h1>
         <p class="text-lg text-black opacity-50 mb-6">Fill in the required details below</p>
         <div>
@@ -182,30 +183,94 @@
             <div class="bg-[#1D1D1D] text-white py-3">
             </div>
         </div>
-        <div class="pt-12 pb-14 px-24" style="box-shadow: 0px 4px 45px 0px #0000000F;">
-            <p class="font-bold text-sm mb-4">Page 1</p>
-            <form class="flex flex-col gap-6">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Full Name" type="text">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Email Address" type="email">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Phone Number" type="tel">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Whatsapp ID" type="text">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Job Title" type="text">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Gender" type="text">
-                <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Location (Country, State, City)" type="text">
-                <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
-                    <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Age Range</option>
-                </select>
-                <textarea class="w-full h-40 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Short Personal Bio" type="text"></textarea>
-                <button class="w-fit min-w-[140px] mt-6 bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl self-end">
-                    <a href="#">Next</a>
-                </button>
-            </form>
+        <div class="pt-12 pb-14 !px-6 sm:px-12 md:px-16 lg:px-24" style="box-shadow: 0px 4px 45px 0px #0000000F;">
+            <p class="font-bold text-sm mb-4 page-id">Page 1</p>
+            <div class="">
+                <div class="tab flex flex-col gap-6">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Full Name" type="text">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Email Address" type="email">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Phone Number" type="tel">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Whatsapp ID" type="text">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Job Title" type="text">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Gender" type="text">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Location (Country, State, City)" type="text">
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle focus:bg-white px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Age Range</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">0-10</option>
+                    </select>
+                    <textarea class="w-full h-40 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black focus:bg-white placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Short Personal Bio" type="text"></textarea>
+                </div>
+
+                <div class="tab flex flex-col gap-6">
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Name of Startup" type="text">
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Stage of Business</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">Starting</option>
+                    </select>
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Industry</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">Engineering</option>
+                    </select>
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Year Founded" type="text">
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Funding Raised</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">20,000 - 60,000</option>
+                    </select>
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Age Range" type="text">Annual Revenue</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">50,000 - 100,000</option>
+                    </select>
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="After this course, how much would you like to raise" type="text">After this course, how much would you like to raise?</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">100,000 - 300,000</option>
+                    </select>
+                </div>
+
+                <div class="tab flex flex-col gap-6">
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">What level of experience do you have as a Founder?</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">Level 10</option>
+                    </select>
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">What do you need help with? Select options that apply</option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">Talking to Investors</option>
+                    </select>
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="What specific goals do you hope to achieve by joining?" type="text">
+                    <textarea class="w-full h-16 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="What special expertise or experiences do you think you can share with other Founders? e.g. Refer customers, strategic advice, mentorship e.t.c" type="text"></textarea>
+                    <textarea class="w-full h-16 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="If accepted into the program, how many jobs do you think you will create, post-course?" type="text"></textarea>
+                </div>
+
+                <div class="tab flex flex-col gap-6">
+                    <select class="bg-white w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 font-normal text-black text-opacity-40 text-sm align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green focus:font-semibold">
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text"><p>Please confirm that you have an Access Bank account (This program is only for Access Bank account holders)</p></option>
+                        <option class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" type="text">I have an access bank account</option>
+                    </select>
+                    <input class="w-full h-12 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Your Access Bank account number" type="text">
+                    <textarea class="w-full h-20 py-3 rounded-[10px] border-[0.5px] border-black border-opacity-20 placeholder:font-normal placeholder:text-black placeholder:text-opacity-40 placeholder:text-sm placeholder:align-middle px-10 focus:bg-white focus:outline-none focus:border-2 focus:border-brand-green font-semibold" placeholder="Please confirm that if accepted to this program, you authorize Access Bank to do a one-time direct debit of N20,000 to cover fees for this program." type="text"></textarea>
+                </div>
+
+                <div class="flex justify-end gap-5">
+                    <button class="w-fit min-w-[140px] mt-6 bg-white text-black px-6 py-3 text-sm font-semibold rounded-xl self-end border-2 border-black hover:font-bold hover:bg-black hover:text-white transition-all hover:transition-all duration-300 !hover:duration-250" id="prevBtn" onclick="nextPrev(-1)">
+                        Previous
+                    </button>
+    
+                    <button class="w-fit min-w-[140px] mt-6 bg-brand-green text-white px-6 py-3 text-sm font-semibold rounded-xl self-end border-2 border-white hover:bg-white hover:border-brand-green hover:text-brand-green hover:font-bold transition-all hover:transition-all duration-300 !hover:duration-250" id="nextBtn" onclick="nextPrev(1)">
+                        Next
+                    </button>
+                </div>
+                <div class="text-center mt-8 hidden" style="text-align:center;margin-top:40px;">
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                    <span class="step"></span>
+                </div>
+            </div>
         </div>
     </section>
 
     <footer class="pt-4">
         <img class="w-full" src="images/footer-img.png">
-        <div class="flex justify-between px-32 items-center py-6">
+        <div class="flex justify-between px-8 md:px-16 lg:px-24 xl:px-32 items-center flex-col sm:flex-row gap-3 sm:gap-0 py-6">
             <p class="font-light text-sm font-[#1d1d1d]">Copyright © 2022 - All rights reserved. SMEZONE</p>
             <div class="flex gap-5">
                 <div class="rounded-full p-2 bg-[#c4c4c4] bg-opacity-60 flex items-center justify-center">
