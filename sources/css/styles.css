@@ -531,8 +531,24 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 1.5rem;
 }
 
+.mb-10{
+  margin-bottom: 2.5rem;
+}
+
 .mt-8{
   margin-top: 2rem;
+}
+
+.mb-5{
+  margin-bottom: 1.25rem;
+}
+
+.mb-12{
+  margin-bottom: 3rem;
+}
+
+.mb-2{
+  margin-bottom: 0.5rem;
 }
 
 .block{
@@ -571,14 +587,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   height: 5rem;
 }
 
-.h-16{
-  height: 4rem;
-}
-
-.h-14{
-  height: 3.5rem;
-}
-
 .max-h-64{
   max-height: 16rem;
 }
@@ -611,10 +619,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .flex-col{
   flex-direction: column;
-}
-
-.flex-wrap{
-  flex-wrap: wrap;
 }
 
 .items-start{
@@ -667,6 +671,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .gap-3{
   gap: 0.75rem;
+}
+
+.gap-9{
+  gap: 2.25rem;
 }
 
 .self-end{
@@ -723,6 +731,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .border-opacity-20{
   --tw-border-opacity: 0.2;
+}
+
+.border-opacity-80{
+  --tw-border-opacity: 0.8;
+}
+
+.border-opacity-30{
+  --tw-border-opacity: 0.3;
 }
 
 .bg-brand-green{
@@ -833,9 +849,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-right: 1.5rem !important;
 }
 
-.\!px-10{
-  padding-left: 2.5rem !important;
-  padding-right: 2.5rem !important;
+.px-7{
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
 }
 
 .pb-12{
@@ -936,6 +952,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   line-height: 2.5rem !important;
 }
 
+.text-xl{
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-normal{
   font-weight: 400;
 }
@@ -979,8 +1000,34 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-red-500{
+  --tw-text-opacity: 1;
+  color: rgb(239 68 68 / var(--tw-text-opacity));
+}
+
+.text-\[\#333333\]{
+  --tw-text-opacity: 1;
+  color: rgb(51 51 51 / var(--tw-text-opacity));
+}
+
 .text-opacity-40{
   --tw-text-opacity: 0.4;
+}
+
+.text-opacity-50{
+  --tw-text-opacity: 0.5;
+}
+
+.text-opacity-20{
+  --tw-text-opacity: 0.2;
+}
+
+.text-opacity-90{
+  --tw-text-opacity: 0.9;
+}
+
+.text-opacity-60{
+  --tw-text-opacity: 0.6;
 }
 
 .opacity-50{
@@ -1003,6 +1050,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .duration-500{
   transition-duration: 500ms;
+}
+
+.ease-linear{
+  transition-timing-function: linear;
 }
 
 .placeholder\:align-middle::-moz-placeholder{
@@ -1042,18 +1093,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .placeholder\:font-normal::placeholder{
   font-weight: 400;
-}
-
-.placeholder\:leading-none::-moz-placeholder{
-  line-height: 1;
-}
-
-.placeholder\:leading-none:-ms-input-placeholder{
-  line-height: 1;
-}
-
-.placeholder\:leading-none::placeholder{
-  line-height: 1;
 }
 
 .placeholder\:text-black::-moz-placeholder{
@@ -1162,6 +1201,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-color: rgb(192 223 0 / var(--tw-border-opacity));
 }
 
+.hover\:border-opacity-80:hover{
+  --tw-border-opacity: 0.8;
+}
+
 .hover\:bg-white:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -1174,6 +1217,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .hover\:font-bold:hover{
   font-weight: 700;
+}
+
+.hover\:font-semibold:hover{
+  font-weight: 600;
 }
 
 .hover\:text-brand-green:hover{
@@ -1226,18 +1273,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   outline-offset: 2px;
 }
 
-.focus-visible\:bg-white:focus-visible{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
 @media (min-width: 640px){
   .sm\:flex-row{
     flex-direction: row;
-  }
-
-  .sm\:flex-nowrap{
-    flex-wrap: nowrap;
   }
 
   .sm\:gap-0{
