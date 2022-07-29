@@ -31,12 +31,14 @@ function showTab(n) {
     document.getElementById("prevBtn").style.display = "inline";
   }
   if (n == (x.length - 1)) {
+    // document.getElementById("nextBtn").setAttribute("type", "submit");
     document.getElementById("nextBtn").innerHTML = "Submit";
   } else {
     document.getElementById("nextBtn").innerHTML = "Next";
   }
 
-  document.querySelector(".page-id").innerHTML = "Page " + n+1
+  console.log(n)
+  // document.querySelector(".page-id").innerHTML = "Page " + n+1
   // ... and run a function that displays the correct step indicator:
   fixStepIndicator(n)
 }
@@ -54,6 +56,8 @@ function nextPrev(n) {
   if (currentTab >= x.length) {
     //...the form gets submitted:
     document.getElementById("regForm").submit();
+    console.log("Form Submitted");
+    x[0].style.display = "inline";
     return false;
   }
   // Otherwise, display the correct tab:
